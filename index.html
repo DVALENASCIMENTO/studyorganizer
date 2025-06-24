@@ -6,12 +6,21 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
 <body>
+
+  <!-- POPUP DE BOAS-VINDAS -->
+  <div id="introPopup" class="popup-overlay">
+    <div class="popup-box">
+      <img src="https://img.icons8.com/color/96/000000/planner.png" alt="Logo" />
+      <h1>Study Organizer</h1>
+      <p>Gerencie seus cursos, links e acompanhe o progresso com facilidade.</p>
+      <button onclick="fecharPopup()">Iniciar</button>
+    </div>
+  </div>
+
   <header>
     <img src="https://img.icons8.com/color/96/000000/planner.png" alt="Study Organizer Logo" />
     <div>
@@ -36,6 +45,17 @@
     </section>
   </main>
 
+  <footer>
+    <p style="text-align: center; padding: 1rem; background: #2a9d8f; color: white;">
+      &copy; 2025 Study Organizer
+    </p>
+  </footer>
+
+  <script>
+    function fecharPopup() {
+      document.getElementById('introPopup').style.display = 'none';
+    }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
